@@ -11,4 +11,5 @@
     <string name="add_remove_favorite">Remove from favorites</string>
     <string name="search_header">Type your ingredients</string>
     <string name="search_hint">milk,eggs,bread</string>
+    <string name="nofavorites">No favorites</string>
 </resources>

@@ -4,4 +4,4 @@ data class Recipe (val recipeId : String,
                    val title : String,
                    val imageUrl : String?,
                    val sourceUrl : String?,
-                   val isFavorite : Boolean)
+                   var isFavorite : Boolean)
