@@ -1,4 +1,14 @@
 <resources>
     <string name="app_name">NutriCoach</string>
     <string name="action_settings">Settings</string>
+    <string name="noresults">No results found</string>
+    <string name="loading">Loading</string>
+    <string name="error">An error ocurred</string>
+    <string name="retry">Retry</string>
+    <string name="favorites">Favorites</string>
+    <string name="search">Search</string>
+    <string name="recipe_image">Recipe image</string>
+    <string name="add_remove_favorite">Remove from favorites</string>
+    <string name="search_header">Type your ingredients</string>
+    <string name="search_hint">milk,eggs,bread</string>
 </resources>

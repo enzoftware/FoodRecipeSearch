@@ -7,6 +7,6 @@ class FavoritesActivity : ChildActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_favorites)
+        setContentView(R.layout.view_list_recipes)
     }
 }
