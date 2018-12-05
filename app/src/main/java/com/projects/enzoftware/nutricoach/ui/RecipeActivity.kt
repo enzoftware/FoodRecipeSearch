@@ -28,7 +28,7 @@ class RecipeActivity : AppCompatActivity() {
     }
 }
 
-fun Context.recipeIntent(url: String): Intent{
+fun Context.recipeIntent(url: String?): Intent{
     return Intent(this, RecipeActivity::class.java).apply {
         putExtra(EXTRA_URL, url)
     }

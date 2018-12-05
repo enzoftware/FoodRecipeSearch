@@ -12,4 +12,5 @@
     <string name="search_header">Type your ingredients</string>
     <string name="search_hint">milk,eggs,bread</string>
     <string name="nofavorites">No favorites</string>
+    <string name="search_query_required">Query required</string>
 </resources>
