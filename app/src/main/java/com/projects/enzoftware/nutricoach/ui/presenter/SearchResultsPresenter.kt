@@ -25,8 +25,27 @@ class SearchResultsPresenter(val repository: RecipeRepository) : BasePresenter<S
                 view?.showError()
             }
         })
-
     }
+
+    fun addFavorites(recipe: Recipe){
+        recipe.isFavorite = true
+        repository.addFavorite(recipe)
+
+        val recipeIndex = recipes?.indexOf(recipe)
+        if (recipeIndex != null){
+            view?.refreshFavoriteStatus(recipeIndex)
+        }
+    }
+
+    fun removeFavorites(recipe: Recipe){
+        repository.removeFavorite(recipe)
+        recipe.isFavorite = false
+        val recipeIndex = recipes?.indexOf(recipe)
+        if (recipeIndex != null){
+            view?.refreshFavoriteStatus(recipeIndex)
+        }
+    }
+
 
     interface View{
         fun showLoading()
