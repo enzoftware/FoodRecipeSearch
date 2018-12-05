@@ -2,6 +2,7 @@ package com.projects.enzoftware.nutricoach.ui.presenter
 
 import com.projects.enzoftware.nutricoach.model.Recipe
 import com.projects.enzoftware.nutricoach.repository.RecipeRepository
+import com.projects.enzoftware.nutricoach.repository.RepositoryCallback
 
 class SearchResultsPresenter(val repository: RecipeRepository) : BasePresenter<SearchResultsPresenter.View?>(){
 
@@ -10,12 +11,12 @@ class SearchResultsPresenter(val repository: RecipeRepository) : BasePresenter<S
     fun search(query : String){
         view?.showLoading()
 
-        repository.getRecipes(query, object : RecipeRepository.RepositoryCallback<List<Recipe>>{
+        repository.getRecipes(query, object : RepositoryCallback<List<Recipe>> {
 
-            override fun onSuccess(recipes: List<Recipe>?) {
-                this@SearchResultsPresenter.recipes = recipes
-                if (recipes != null && recipes.isNotEmpty()){
-                    view?.showRecipes(recipes)
+            override fun onSuccess(t: List<Recipe>?) {
+                this@SearchResultsPresenter.recipes = t
+                if (t != null && t.isNotEmpty()){
+                    view?.showRecipes(t)
                 }else{
                     view?.showEmptyRecipes()
                 }

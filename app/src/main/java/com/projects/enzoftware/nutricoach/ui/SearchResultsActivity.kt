@@ -8,6 +8,7 @@ import android.view.View
 import com.projects.enzoftware.nutricoach.R
 import com.projects.enzoftware.nutricoach.model.Recipe
 import com.projects.enzoftware.nutricoach.repository.RecipeRepository
+import com.projects.enzoftware.nutricoach.repository.RecipeRepositoryImpl
 import com.projects.enzoftware.nutricoach.ui.adapter.Listener
 import com.projects.enzoftware.nutricoach.ui.adapter.RecipeAdapter
 import com.projects.enzoftware.nutricoach.ui.presenter.SearchResultsPresenter
@@ -28,7 +29,7 @@ class SearchResultsActivity : ChildActivity(), SearchResultsPresenter.View{
 
 
     // private val repository: RecipeRepository by lazy {RecipeRepository.getRepository(this)}
-    private val presenter : SearchResultsPresenter by lazy { SearchResultsPresenter(RecipeRepository.getRepository(this)) }
+    private val presenter : SearchResultsPresenter by lazy { SearchResultsPresenter(RecipeRepositoryImpl.getRepository(this)) }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.view_list_recipes)
