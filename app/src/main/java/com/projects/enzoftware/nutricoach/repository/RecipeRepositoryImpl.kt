@@ -13,7 +13,7 @@ import retrofit2.Response
 
 private const val FAVORITES_KEY = "FAVORITES_KEY"
 
-class RecipeRepositoryImpl(private val sharedPreferences: SharedPreferences) : RecipeRepository {
+open class RecipeRepositoryImpl(private val sharedPreferences: SharedPreferences) : RecipeRepository {
 
     private val gson = Gson()
 
