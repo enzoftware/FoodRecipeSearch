@@ -25,6 +25,7 @@ class RecipeAdapter(private var recipes : List<Recipe>, private val listener: Li
     }
 
     class ViewHolder(itemView : View) : RecyclerView.ViewHolder(itemView){
+
         fun bind(item: Recipe, listener: Listener) = with(itemView) {
             Glide.with(context).load(item.imageUrl).into(imageView)
             title.text = item.title
