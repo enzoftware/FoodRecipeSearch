@@ -1,4 +1,4 @@
-package com.projects.enzoftware.nutricoach.ui.adapter
+package com.projects.enzoftware.nutricoach.ui.searchResult.adapter
 
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater

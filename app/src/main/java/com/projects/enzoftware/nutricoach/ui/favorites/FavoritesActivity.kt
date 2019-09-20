@@ -7,8 +7,8 @@ import com.projects.enzoftware.nutricoach.R
 import com.projects.enzoftware.nutricoach.model.Recipe
 import com.projects.enzoftware.nutricoach.repository.RecipeRepository
 import com.projects.enzoftware.nutricoach.repository.RecipeRepositoryImpl
-import com.projects.enzoftware.nutricoach.ui.adapter.Listener
-import com.projects.enzoftware.nutricoach.ui.adapter.RecipeAdapter
+import com.projects.enzoftware.nutricoach.ui.searchResult.adapter.Listener
+import com.projects.enzoftware.nutricoach.ui.searchResult.adapter.RecipeAdapter
 import com.projects.enzoftware.nutricoach.ui.base.ChildActivity
 import com.projects.enzoftware.nutricoach.ui.recipe.recipeIntent
 import kotlinx.android.synthetic.main.view_error.*
