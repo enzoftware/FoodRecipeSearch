@@ -4,6 +4,8 @@ import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import com.projects.enzoftware.nutricoach.R
+import com.projects.enzoftware.nutricoach.ui.favorites.FavoritesActivity
+import com.projects.enzoftware.nutricoach.ui.search.SearchActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {

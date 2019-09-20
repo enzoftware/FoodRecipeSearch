@@ -1,4 +1,6 @@
-package com.projects.enzoftware.nutricoach.ui.presenter
+package com.projects.enzoftware.nutricoach.ui.search
+
+import com.projects.enzoftware.nutricoach.ui.base.BasePresenter
 
 
 class SearchPresenter : BasePresenter<SearchPresenter.View?>(){

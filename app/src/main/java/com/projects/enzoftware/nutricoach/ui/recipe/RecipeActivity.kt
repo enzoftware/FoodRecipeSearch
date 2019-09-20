@@ -1,4 +1,4 @@
-package com.projects.enzoftware.nutricoach.ui
+package com.projects.enzoftware.nutricoach.ui.recipe
 
 import android.content.Context
 import android.content.Intent

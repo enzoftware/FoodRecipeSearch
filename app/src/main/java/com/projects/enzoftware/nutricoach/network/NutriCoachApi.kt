@@ -1,9 +1,9 @@
-package com.projects.enzoftware.nutricoach.api
+package com.projects.enzoftware.nutricoach.network
 
 import com.google.gson.FieldNamingPolicy
 import com.google.gson.GsonBuilder
-import com.projects.enzoftware.nutricoach.api.request.LoginRequest
-import com.projects.enzoftware.nutricoach.api.response.LoginResponse
+import com.projects.enzoftware.nutricoach.network.request.LoginRequest
+import com.projects.enzoftware.nutricoach.network.response.LoginResponse
 import retrofit2.Call
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
@@ -19,7 +19,7 @@ interface NutriCoachApi {
     fun registerUser(@Body body : LoginRequest)
 
     companion object Factory {
-        fun create(): RecipeApi {
+        fun create(): NutriCoachApi {
             val gson = GsonBuilder()
                 .setFieldNamingPolicy(FieldNamingPolicy.IDENTITY)
                 .create()
@@ -29,7 +29,7 @@ interface NutriCoachApi {
                 .addConverterFactory(GsonConverterFactory.create(gson))
                 .build()
 
-            return retrofit.create(RecipeApi::class.java)
+            return retrofit.create(NutriCoachApi::class.java)
         }
     }
 }

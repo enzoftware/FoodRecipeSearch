@@ -1,10 +1,9 @@
 package com.projects.enzoftware.nutricoach
 
-import android.view.View
 import com.nhaarman.mockito_kotlin.mock
 import com.nhaarman.mockito_kotlin.never
 import com.nhaarman.mockito_kotlin.verify
-import com.projects.enzoftware.nutricoach.ui.presenter.SearchPresenter
+import com.projects.enzoftware.nutricoach.ui.search.SearchPresenter
 import org.junit.Before
 import org.junit.Test
 import org.mockito.ArgumentMatchers.anyString

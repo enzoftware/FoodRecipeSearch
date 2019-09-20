@@ -25,10 +25,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.FavoritesActivity" />
-        <activity android:name=".ui.RecipeActivity" />
-        <activity android:name=".ui.SearchActivity" />
-        <activity android:name=".ui.SearchResultsActivity" />
+        <activity android:name=".ui.favorites.FavoritesActivity" />
+        <activity android:name=".ui.recipe.RecipeActivity" />
+        <activity android:name=".ui.search.SearchActivity" />
+        <activity android:name=".ui.searchResult.SearchResultsActivity" />
     </application>
 
 </manifest>

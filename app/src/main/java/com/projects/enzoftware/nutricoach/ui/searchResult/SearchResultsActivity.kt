@@ -1,4 +1,4 @@
-package com.projects.enzoftware.nutricoach.ui
+package com.projects.enzoftware.nutricoach.ui.searchResult
 
 import android.content.Context
 import android.content.Intent
@@ -7,11 +7,11 @@ import android.support.v7.widget.LinearLayoutManager
 import android.view.View
 import com.projects.enzoftware.nutricoach.R
 import com.projects.enzoftware.nutricoach.model.Recipe
-import com.projects.enzoftware.nutricoach.repository.RecipeRepository
 import com.projects.enzoftware.nutricoach.repository.RecipeRepositoryImpl
 import com.projects.enzoftware.nutricoach.ui.adapter.Listener
 import com.projects.enzoftware.nutricoach.ui.adapter.RecipeAdapter
-import com.projects.enzoftware.nutricoach.ui.presenter.SearchResultsPresenter
+import com.projects.enzoftware.nutricoach.ui.base.ChildActivity
+import com.projects.enzoftware.nutricoach.ui.recipe.recipeIntent
 import kotlinx.android.synthetic.main.view_error.*
 import kotlinx.android.synthetic.main.view_list_recipes.*
 import kotlinx.android.synthetic.main.view_loading.*
@@ -29,7 +29,11 @@ class SearchResultsActivity : ChildActivity(), SearchResultsPresenter.View{
 
 
     // private val repository: RecipeRepository by lazy {RecipeRepository.getRepository(this)}
-    private val presenter : SearchResultsPresenter by lazy { SearchResultsPresenter(RecipeRepositoryImpl.getRepository(this)) }
+    private val presenter : SearchResultsPresenter by lazy {
+        SearchResultsPresenter(
+            RecipeRepositoryImpl.getRepository(this)
+        )
+    }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.view_list_recipes)

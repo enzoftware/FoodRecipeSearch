@@ -4,7 +4,7 @@ import android.content.Context
 import android.content.SharedPreferences
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
-import com.projects.enzoftware.nutricoach.api.RecipeApi
+import com.projects.enzoftware.nutricoach.network.RecipeApi
 import com.projects.enzoftware.nutricoach.model.Recipe
 import com.projects.enzoftware.nutricoach.model.RecipesContainer
 import retrofit2.Call

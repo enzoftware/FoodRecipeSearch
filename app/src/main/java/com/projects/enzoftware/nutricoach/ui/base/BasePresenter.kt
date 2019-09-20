@@ -1,4 +1,4 @@
-package com.projects.enzoftware.nutricoach.ui.presenter
+package com.projects.enzoftware.nutricoach.ui.base
 
 abstract class BasePresenter<V> {
 

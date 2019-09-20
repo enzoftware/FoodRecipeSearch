@@ -1,4 +1,4 @@
-package com.projects.enzoftware.nutricoach.ui
+package com.projects.enzoftware.nutricoach.ui.base
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity

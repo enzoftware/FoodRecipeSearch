@@ -1,4 +1,4 @@
-package com.projects.enzoftware.nutricoach.api
+package com.projects.enzoftware.nutricoach.network
 
 import com.google.gson.FieldNamingPolicy
 import com.google.gson.GsonBuilder

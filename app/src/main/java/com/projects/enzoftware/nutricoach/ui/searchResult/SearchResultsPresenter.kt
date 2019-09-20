@@ -1,10 +1,11 @@
-package com.projects.enzoftware.nutricoach.ui.presenter
+package com.projects.enzoftware.nutricoach.ui.searchResult
 
 import com.projects.enzoftware.nutricoach.model.Recipe
 import com.projects.enzoftware.nutricoach.repository.RecipeRepository
 import com.projects.enzoftware.nutricoach.repository.RepositoryCallback
+import com.projects.enzoftware.nutricoach.ui.base.BasePresenter
 
-class SearchResultsPresenter(val repository: RecipeRepository) : BasePresenter<SearchResultsPresenter.View?>(){
+class SearchResultsPresenter(private val repository: RecipeRepository) : BasePresenter<SearchResultsPresenter.View?>(){
 
     private var recipes : List<Recipe>? = null
 

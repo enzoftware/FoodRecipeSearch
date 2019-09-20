@@ -1,16 +1,18 @@
-package com.projects.enzoftware.nutricoach.ui
+package com.projects.enzoftware.nutricoach.ui.search
 
 import android.content.Context
 import android.os.Bundle
 import android.support.design.widget.Snackbar
 import android.view.inputmethod.InputMethodManager
 import com.projects.enzoftware.nutricoach.R
-import com.projects.enzoftware.nutricoach.ui.presenter.SearchPresenter
+import com.projects.enzoftware.nutricoach.ui.base.ChildActivity
+import com.projects.enzoftware.nutricoach.ui.searchResult.searchResultsIntent
 import kotlinx.android.synthetic.main.activity_search.*
 
 class SearchActivity : ChildActivity(), SearchPresenter.View {
 
-    private val presenter : SearchPresenter = SearchPresenter()
+    private val presenter : SearchPresenter =
+        SearchPresenter()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
