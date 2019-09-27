@@ -27,8 +27,6 @@ private const val EXTRA_QUERY = "EXTRA_QUERY"
 
 class SearchResultsActivity : ChildActivity(), SearchResultsPresenter.View{
 
-
-    // private val repository: RecipeRepository by lazy {RecipeRepository.getRepository(this)}
     private val presenter : SearchResultsPresenter by lazy {
         SearchResultsPresenter(
             RecipeRepositoryImpl.getRepository(this)

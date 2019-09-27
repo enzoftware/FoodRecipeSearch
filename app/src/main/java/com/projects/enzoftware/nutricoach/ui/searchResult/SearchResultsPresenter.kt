@@ -13,7 +13,6 @@ class SearchResultsPresenter(private val repository: RecipeRepository) : BasePre
         view?.showLoading()
 
         repository.getRecipes(query, object : RepositoryCallback<List<Recipe>> {
-
             override fun onSuccess(t: List<Recipe>?) {
                 this@SearchResultsPresenter.recipes = t
                 if (t != null && t.isNotEmpty()){
