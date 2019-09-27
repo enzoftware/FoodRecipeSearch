@@ -4,6 +4,7 @@ import com.projects.enzoftware.nutricoach.network.NutriCoachApi
 import com.projects.enzoftware.nutricoach.network.request.LoginRequest
 import com.projects.enzoftware.nutricoach.network.request.RegisterRequest
 import com.projects.enzoftware.nutricoach.network.response.LoginResponse
+import com.projects.enzoftware.nutricoach.network.response.RegisterResponse
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -30,17 +31,17 @@ class NutriCoachRepositoryImpl : NutriCoachRepository {
         password: String,
         firstName: String,
         lastName: String,
-        callback: NutriCoachCallback<String>
+        callback: NutriCoachCallback<RegisterResponse>
     ) {
         val request = NutriCoachApi.create()
             .registerUser(RegisterRequest(firstName, lastName, email, password))
-        request.enqueue(object : Callback<String>{
+        request.enqueue(object : Callback<RegisterResponse>{
 
-            override fun onFailure(call: Call<String>, t: Throwable) {
+            override fun onFailure(call: Call<RegisterResponse>, t: Throwable) {
                 callback.onError()
             }
 
-            override fun onResponse(call: Call<String>, response: Response<String>) {
+            override fun onResponse(call: Call<RegisterResponse>, response: Response<RegisterResponse>) {
                 callback.onSuccess(response.body())
             }
         })
