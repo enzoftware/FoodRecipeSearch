@@ -8,23 +8,24 @@
         android:id="@+id/slide_premium_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Bienvenido a NutriCoach"
+        android:text="Quieres apoyarnos?"
         android:textAlignment="center"
         android:textColor="@color/black"
-        android:textSize="24sp"
+        android:textSize="28sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
 
     <TextView
+        android:layout_margin="12dp"
         android:id="@+id/slide_premium_description"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Lorem ipsum wdjkadjwkjdakjdakjwdkajdkjawdkjad Lorem ipsum wdjkadjwkjdakjdakjwdkajdkjawdkjad Lorem ipsum wdjkadjwkjdakjdakjwdkajdkjawdkjad Lorem ipsum wdjkadjwkjdakjdakjwdkajdkjawdkjad"
+        android:text="Quieres formar parte de la gran comunidad de NutriCoach, por solo $0.99 al mes podras tener increibles posibilidades dentro de la aplicacion"
         android:textAlignment="center"
         android:textColor="@color/black"
-        android:textSize="16sp"
+        android:textSize="20sp"
         android:textStyle="bold"
         android:layout_marginTop="16dp"
         app:layout_constraintTop_toBottomOf="@id/slide_premium_title"
