@@ -1,8 +1,8 @@
 package com.projects.enzoftware.nutricoach.ui
 
 import android.content.Intent
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import com.projects.enzoftware.nutricoach.R
 import com.projects.enzoftware.nutricoach.ui.favorites.FavoritesActivity
 import com.projects.enzoftware.nutricoach.ui.search.SearchActivity

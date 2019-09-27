@@ -2,9 +2,9 @@ package com.projects.enzoftware.nutricoach.ui.recipe
 
 import android.content.Context
 import android.content.Intent
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.webkit.WebViewClient
+import androidx.appcompat.app.AppCompatActivity
 import com.projects.enzoftware.nutricoach.R
 import kotlinx.android.synthetic.main.activity_recipe.*
 

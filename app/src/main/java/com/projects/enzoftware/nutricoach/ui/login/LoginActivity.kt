@@ -1,7 +1,8 @@
 package com.projects.enzoftware.nutricoach.ui.login
 
-import android.support.v7.app.AppCompatActivity
+
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import com.projects.enzoftware.nutricoach.R
 import com.projects.enzoftware.nutricoach.ui.login.view.LoginView
 
