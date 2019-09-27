@@ -1,4 +1,4 @@
-package com.projects.enzoftware.nutricoach.ui
+package com.projects.enzoftware.nutricoach.ui.home
 
 import android.content.Intent
 import android.os.Bundle
@@ -8,7 +8,7 @@ import com.projects.enzoftware.nutricoach.ui.favorites.FavoritesActivity
 import com.projects.enzoftware.nutricoach.ui.search.SearchActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
-class MainActivity : AppCompatActivity() {
+class HomeActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
