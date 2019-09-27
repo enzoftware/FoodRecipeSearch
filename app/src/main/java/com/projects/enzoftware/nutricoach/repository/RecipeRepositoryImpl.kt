@@ -2,6 +2,7 @@ package com.projects.enzoftware.nutricoach.repository
 
 import android.content.Context
 import android.content.SharedPreferences
+import android.util.Log
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import com.projects.enzoftware.nutricoach.network.RecipeApi
@@ -53,11 +54,13 @@ open class RecipeRepositoryImpl(private val sharedPreferences: SharedPreferences
                     markFavorites(recipesContainer)
                     callback.onSuccess(recipesContainer?.recipes)
                 } else {
+                    Log.d("ERROR RECIPES", "RESPONSE NO SUCCESS")
                     callback.onError()
                 }
             }
 
             override fun onFailure(call: Call<RecipesContainer>?, t: Throwable?) {
+                Log.d("ERROR RECIPES", t!!.message)
                 callback.onError()
             }
         })

@@ -3,15 +3,15 @@ package com.projects.enzoftware.nutricoach.ui.searchResult
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
-import android.support.v7.widget.LinearLayoutManager
 import android.view.View
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.projects.enzoftware.nutricoach.R
 import com.projects.enzoftware.nutricoach.model.Recipe
 import com.projects.enzoftware.nutricoach.repository.RecipeRepositoryImpl
-import com.projects.enzoftware.nutricoach.ui.searchResult.adapter.Listener
-import com.projects.enzoftware.nutricoach.ui.searchResult.adapter.RecipeAdapter
 import com.projects.enzoftware.nutricoach.ui.base.ChildActivity
 import com.projects.enzoftware.nutricoach.ui.recipe.recipeIntent
+import com.projects.enzoftware.nutricoach.ui.searchResult.adapter.Listener
+import com.projects.enzoftware.nutricoach.ui.searchResult.adapter.RecipeAdapter
 import kotlinx.android.synthetic.main.view_error.*
 import kotlinx.android.synthetic.main.view_list_recipes.*
 import kotlinx.android.synthetic.main.view_loading.*
@@ -27,8 +27,6 @@ private const val EXTRA_QUERY = "EXTRA_QUERY"
 
 class SearchResultsActivity : ChildActivity(), SearchResultsPresenter.View{
 
-
-    // private val repository: RecipeRepository by lazy {RecipeRepository.getRepository(this)}
     private val presenter : SearchResultsPresenter by lazy {
         SearchResultsPresenter(
             RecipeRepositoryImpl.getRepository(this)

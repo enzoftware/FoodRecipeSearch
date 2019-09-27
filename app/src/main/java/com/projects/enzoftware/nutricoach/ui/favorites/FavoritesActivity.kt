@@ -1,8 +1,10 @@
 package com.projects.enzoftware.nutricoach.ui.favorites
 
 import android.os.Bundle
-import android.support.v7.widget.LinearLayoutManager
+import android.provider.Settings.Global.getString
 import android.view.View
+import androidx.core.content.ContextCompat.startActivity
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.projects.enzoftware.nutricoach.R
 import com.projects.enzoftware.nutricoach.model.Recipe
 import com.projects.enzoftware.nutricoach.repository.RecipeRepository
@@ -15,6 +17,7 @@ import kotlinx.android.synthetic.main.view_error.*
 import kotlinx.android.synthetic.main.view_list_recipes.*
 import kotlinx.android.synthetic.main.view_loading.*
 import kotlinx.android.synthetic.main.view_noresults.*
+
 
 class FavoritesActivity : ChildActivity() {
 

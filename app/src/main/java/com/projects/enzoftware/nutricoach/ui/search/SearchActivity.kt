@@ -2,8 +2,8 @@ package com.projects.enzoftware.nutricoach.ui.search
 
 import android.content.Context
 import android.os.Bundle
-import android.support.design.widget.Snackbar
 import android.view.inputmethod.InputMethodManager
+import com.google.android.material.snackbar.Snackbar
 import com.projects.enzoftware.nutricoach.R
 import com.projects.enzoftware.nutricoach.ui.base.ChildActivity
 import com.projects.enzoftware.nutricoach.ui.searchResult.searchResultsIntent
