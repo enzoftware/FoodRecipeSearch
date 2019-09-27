@@ -1,5 +1,7 @@
 package com.projects.enzoftware.nutricoach.repository
 
+import android.content.Context
+import android.util.Log
 import com.projects.enzoftware.nutricoach.network.NutriCoachApi
 import com.projects.enzoftware.nutricoach.network.request.LoginRequest
 import com.projects.enzoftware.nutricoach.network.request.RegisterRequest
@@ -11,7 +13,7 @@ import retrofit2.Response
 
 class NutriCoachRepositoryImpl : NutriCoachRepository {
 
-    override fun login(email: String, password: String, callback: NutriCoachCallback<LoginResponse>) {
+    override fun login(email: String, password: String, callback: RepositoryCallback<LoginResponse>) {
         val request = NutriCoachApi.create().login(LoginRequest(email, password))
         request.enqueue(object: Callback<LoginResponse>{
 
@@ -20,6 +22,7 @@ class NutriCoachRepositoryImpl : NutriCoachRepository {
             }
 
             override fun onResponse(call: Call<LoginResponse>, response: Response<LoginResponse>) {
+                Log.d("LOGIN RESPONSE", response.body().toString())
                 callback.onSuccess(response.body())
             }
         })
@@ -31,7 +34,7 @@ class NutriCoachRepositoryImpl : NutriCoachRepository {
         password: String,
         firstName: String,
         lastName: String,
-        callback: NutriCoachCallback<RegisterResponse>
+        callback: RepositoryCallback<RegisterResponse>
     ) {
         val request = NutriCoachApi.create()
             .registerUser(RegisterRequest(firstName, lastName, email, password))
@@ -45,6 +48,13 @@ class NutriCoachRepositoryImpl : NutriCoachRepository {
                 callback.onSuccess(response.body())
             }
         })
+    }
+
+
+    companion object {
+        fun getRepository(context: Context): NutriCoachRepository {
+            return NutriCoachRepositoryImpl()
+        }
     }
 
 }
