@@ -6,7 +6,7 @@
               android:layout_height="match_parent"
               android:orientation="vertical"
               android:padding="16dp"
-              tools:context="com.projects.enzoftware.nutricoach.ui.MainActivity">
+              tools:context="com.projects.enzoftware.nutricoach.ui.home.HomeActivity">
 
     <LinearLayout
             android:id="@+id/searchButton"

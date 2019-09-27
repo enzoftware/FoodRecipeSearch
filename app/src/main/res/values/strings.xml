@@ -21,4 +21,9 @@
     <string name="login_password_hint">Contraseña</string>
     <string name="signup_login_hint">Ya tienes cuenta? Inicia sesion</string>
     <string name="login_signup_hint">No tienes cuenta? Registrate</string>
+    <string name="error_title">Error</string>
+    <string name="error_message">Ha ocurrido un error. Porfavor vuelve a intentarlo</string>
+    <string name="accept_button_text">Ok</string>
+    <string name="please_wait_txt">Espere por favor</string>
+    <string name="loading_txt">Cargando</string>
 </resources>

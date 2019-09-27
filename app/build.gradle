@@ -39,6 +39,9 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     implementation 'com.airbnb.android:lottie:3.0.0'
 
+    implementation 'com.github.michael-rapp:android-material-dialog:5.1.6'
+
+
     implementation 'com.squareup.retrofit2:retrofit:2.5.0'
     implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
     implementation 'com.squareup.okhttp3:logging-interceptor:3.8.0'
