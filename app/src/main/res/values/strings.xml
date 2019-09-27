@@ -13,4 +13,12 @@
     <string name="search_hint">milk,eggs,bread</string>
     <string name="nofavorites">No favorites</string>
     <string name="search_query_required">Query required</string>
+    <string name="next">Siguiente</string>
+    <string name="skip">Saltar</string>
+    <string name="start">Empezar</string>
+    <string name="register">Registrar</string>
+    <string name="login_email_hint">Correo</string>
+    <string name="login_password_hint">Contraseña</string>
+    <string name="signup_login_hint">Ya tienes cuenta? Inicia sesion</string>
+    <string name="login_signup_hint">No tienes cuenta? Registrate</string>
 </resources>
