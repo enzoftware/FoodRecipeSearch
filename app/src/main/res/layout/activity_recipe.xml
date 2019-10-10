@@ -3,7 +3,7 @@
              xmlns:tools="http://schemas.android.com/tools"
              android:layout_width="match_parent"
              android:layout_height="match_parent"
-             tools:context="com.projects.enzoftware.nutricoach.ui.RecipeActivity">
+             tools:context="com.projects.enzoftware.nutricoach.ui.recipe.RecipeActivity">
 
     <WebView
             android:id="@+id/webView"

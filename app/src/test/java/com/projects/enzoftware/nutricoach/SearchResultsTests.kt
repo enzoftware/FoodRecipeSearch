@@ -4,7 +4,7 @@ import com.nhaarman.mockito_kotlin.*
 import com.projects.enzoftware.nutricoach.model.Recipe
 import com.projects.enzoftware.nutricoach.repository.RecipeRepository
 import com.projects.enzoftware.nutricoach.repository.RepositoryCallback
-import com.projects.enzoftware.nutricoach.ui.presenter.SearchResultsPresenter
+import com.projects.enzoftware.nutricoach.ui.searchResult.SearchResultsPresenter
 import org.junit.Assert
 import org.junit.Before
 import org.junit.Test

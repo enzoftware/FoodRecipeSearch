@@ -5,7 +5,7 @@
               android:layout_height="match_parent"
               android:orientation="vertical"
               android:padding="16dp"
-              tools:context="com.projects.enzoftware.nutricoach.ui.SearchActivity">
+              tools:context="com.projects.enzoftware.nutricoach.ui.search.SearchActivity">
 
     <TextView
             android:layout_width="match_parent"
