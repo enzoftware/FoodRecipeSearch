@@ -1,2 +1,2 @@
-# nutricoach-android
-Nutricoach android app 
+# IngridientCoach app
+
