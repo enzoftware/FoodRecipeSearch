@@ -1,8 +1,6 @@
-<div align="center">
-  
-<img src="https://github.com/enzoftware/ingredientcoach/blob/master/app/src/main/res/drawable-v24/nutricoach.png" width="150"/>
+
+# IngridientCoach app
+---
+<img src="art/s1.png" width="200"/> <img src="art/s2.png" width="200"/> <img src="art/s3.png" width="200"/>
 
 
-# NutriCoach Android App
-
-</div>
